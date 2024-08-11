@@ -1,0 +1,34 @@
+# chrome浏览器路径
+browser_path: "D:\\Scoop\\apps\\ungoogled-chromium\\current\\chrome.exe"
+# 浏览器用户数据路径
+browser_data: "D:\\Scoop\\apps\\ungoogled-chromium\\current\\User Data"
+# keepass.exe路径,poweshell脚本解析kdbx文件需要加载keepass.exe反射函数
+keepass_path: "D:\\Scoop\\apps\\KeePass\\current\\KeePass.exe"
+# kdbx数据库路径
+kpdb_path: "./example.kdbx"
+# 站点信息数组
+sites_info:
+  # 站点在keepass数据库中记录的标题
+  - entry_title: "163mail"
+     # 用户名输入框选择器
+    user_locator: "#account-box > div.u-input > input"
+    # 密码输入框选择器
+    pass_locator: "#pwdtext"
+    # 当密码输入框点击后生成新的输入框时使用下面的选择器为新的输入框填充内容,缺省为空
+    # pass_fill_locator: ""
+    # 登录按钮选择器
+    login_locator: "#dologin"
+    # 是否自动登录, 缺省为false
+    auto_login: true  
+  - entry_title: "xunlei"   
+    user_locator: "#al_u"    
+    pass_locator: "#al_p"    
+    login_locator: "#al_submit"
+  - entry_title: "kaoshibao"
+    user_locator: "#body > div.account-bj > div.account-container > div.form-main > form > div > div:nth-child(1) > div > div > div > input"
+    pass_locator: "#body > div.account-bj > div.account-container > div.form-main > form > div > div:nth-child(2) > div > div > div > input"
+    login_locator: "#body > div.account-bj > div.account-container > div.form-main > form > div > div.mb20 > button"
+  - entry_title: "chaoxing"
+    user_locator: "#phone"
+    pass_locator: "#pwd"
+    login_locator: "#loginBtn"
