@@ -22,7 +22,7 @@
 
 ## 使用说明
 
-1. 从github release下载打包好的压缩包并解压
+1. 从github releases下载编译后打包的压缩包inspection_assistant.zip并解压
 
 2. 下载keepass并安装,创建自己的kdbx数据库 [官网下载](https://keepass.info/download.html)
 
